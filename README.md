@@ -33,6 +33,7 @@ in the Jenkins deployment manifest.
 Follow the instructions for getting the initial password from the Jenkins pod containing the Jenkins server container, then install the `Kubernetes` and `Pipeline` plug-ins - this may take some time.
 
 The majority of Jenkins setup is explained on the [Kubernetes plug-in](https://plugins.jenkins.io/kubernetes/) webpage and this excellent link by [devopscube](https://devopscube.com/jenkins-build-agents-kubernetes/). Mainly, you will want to:
+
     1) go to `Manage Jenkins > Configure Cloud` and add a Kubernetes configuration with the name `"Kubernetes"`
     2) Click `Kubernetes Cloud details...`
     3) Set the namespace as `devops-tools` to match your Deployment.
