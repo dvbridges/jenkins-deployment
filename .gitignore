@@ -1,0 +1,6 @@
+# General
+vagrant-kubeadm-kubernetes/.vagrant/
+vagrant-kubeadm-kubernetes/configs/
+
+# other
+prom_on_k8s_howto/**

@@ -1,0 +1,10 @@
+FROM jenkins/inbound-agent:4.3-4-jdk11
+
+USER root
+RUN apt-get update && \
+    apt-get install -y dnsutils \
+    curl
+
+WORKDIR /opt
+COPY ./jenkins-agent.sh /opt/jenkins-agent.sh
+ENTRYPOINT ["/opt/jenkins-agent.sh"]

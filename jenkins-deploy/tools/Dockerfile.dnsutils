@@ -1,0 +1,8 @@
+FROM debian:buster
+
+RUN apt-get -q update && \
+    apt-get install -y dnsutils \ 
+        vim \
+        curl \
+        wget && \
+    apt-get clean
